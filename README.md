@@ -39,7 +39,7 @@ Startup
    
 3. The application connects to the default local mongodb which is at port 27017
    Attached in this repository is the startupDB file that contains some dummy data to populate the website and demonstrate its functionality that you can optionally      choose to run on a mongodb shell or you can startup the application without it
-   Mongo shell Installation Instrictuins: 
+   Mongo shell Installation Instructions: 
    https://www.mongodb.com/docs/mongodb-shell/install/#std-label-mdb-shell-install
    
 4. Navigate to the unzipped Archery directory on your powershell and run:
