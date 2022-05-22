@@ -1,0 +1,97 @@
+use demos
+db.createCollection("users")
+db.users.insertMany([{
+  "_id": ObjectId('619d29ca13e7ff53e8431db4'),
+  "firstName": "Brevory",
+  "lastName": "Foster",
+  "email": "bfoste40@uncc.edu",
+  "password": "$2b$10$G8yrQuRslFOOvspCDDaEtetMHWWmeorOpjmUS8.T.yQWBnTFuKEWe",
+  "__v": 0
+},{
+  "_id": ObjectId('619d50d231d8cc22b92da9aa'),
+  "firstName": "Brevory",
+  "lastName": "Foster",
+  "email": "brevory10@gmail.com",
+  "password": "$2b$10$PVQdiXq8XyGdGv5d8p0plecsq2lHocnCwVuZlbKFNjq.3VQQk62qC",
+  "__v": 0
+}])
+db.createCollection("connections")
+db.connections.insertMany([{
+  "_id":  ObjectId('619d512a31d8cc22b92da9af'),
+  "title": "UNCC Archery Club",
+  "catName": "learn",
+  "details": "Charlotte Archery is a club for people of all skill levels to have a place to practice archery. Anyone is welcome, from beginners to experts, so come on out and try this age old sport, or just keep your eye sharp with us. Meeting times will be visible here to members with the times and locations.  All members must complete a waiver and hazing module to participate.",
+  "date": "Mondays and Thursdays",
+  "start": "4PM",
+  "end": "6PM",
+  "host": "Charlotte Archery",
+  "author": ObjectId('619d50d231d8cc22b92da9aa'),
+  "createdAt": ISODate("2021-11-23T20:38:02.200Z"),
+  "updatedAt": ISODate("2021-11-23T20:38:02.200Z"),
+  "__v": 0
+},{
+  "_id": ObjectId('619d517731d8cc22b92da9b2'),
+  "title": "Barefoot Archery",
+  "catName": "learn",
+  "details": "Barefoot Archery is committed to providing the most comprehensive range of services and learning experiences for our students and guests. We offer exceptional educational opportunities for beginners that focus on acquiring the basic skills and competencies necessary to progress in the sport.",
+  "date": "Tuesdays-Saturdays",
+  "start": "10AM",
+  "end": "6PM",
+  "host": "Barefoot Archery",
+  "author": ObjectId('619d50d231d8cc22b92da9aa'),
+  "createdAt": ISODate("2021-11-23T20:39:19.549Z"),
+  "updatedAt": ISODate("2021-11-23T20:39:19.549Z"),
+  "__v": 0
+},{
+  "_id": ObjectId('619d51a331d8cc22b92da9b5'),
+  "title": "Southern Draw Archery",
+  "catName": "learn",
+  "details": "We are Justin Mckee and Doug Williams. Our Passion is Archery. We are Bowhunters and Tournament archers, just like you!",
+  "date": "Tuesdays-Saturdays",
+  "start": "11AM.",
+  "end": "6PM",
+  "host": "Justin Mckee and Doug Williams",
+  "author": ObjectId('619d50d231d8cc22b92da9aa'),
+  "createdAt": ISODate("2021-11-23T20:40:03.125Z"),
+  "updatedAt": ISODate("2021-11-23T20:40:03.125Z"),
+  "__v": 0
+},{
+  "_id": ObjectId('619d51da31d8cc22b92da9bb'),
+  "title": "Happy Halloween (18m Indoors)",
+  "catName": "compete",
+  "details": "SCORECARDS MUST BE TURNED IN TO SCORE TABLE WITHIN 20 MINUTES OF FINISHING ROUND.  ONCE SCORECARDS HAVE BEEN TURNED THEY CANNOT BE RETURNED UNTIL ALL SCORES ARE TABULATED. PLEASE DO NOT ASK FOR COPIES OR SCORES UNTIL ALL CARDS ARE COMPLETED. ONLY ONE BALE AT A TIME AT SCORE CHECK IN TABLE. ALL SCORES HAVE TO BE TABULATED AND AGREED UPON BEFORE COMING TO TABLE.",
+  "date": "10/30/2021",
+  "start": "10AM",
+  "end": "10:45AM",
+  "host": "GUY HUTCHERSON",
+  "author": ObjectId('619d29ca13e7ff53e8431db4'),
+  "createdAt": ISODate("2021-11-23T20:40:58.323Z"),
+  "updatedAt": ISODate("2021-11-23T20:40:58.323Z"),
+  "__v": 0
+},{
+  "_id": ObjectId('619d528031d8cc22b92da9bf'),
+  "title": "2021 USA ARCHERY NORTH CAROLINA STATE INDOOR CHAMPIONSHIP",
+  "catName": "compete",
+  "details": "There will be a designated spectators and coaches line that will be enforced.  No coaches or spectators will be allowed to cross once scoring has started. Lane assignments and targets will be assigned based on class and division.  No requests for lanes or positions will be allowed. Once lane assignments have been made, no changes will be allowed.  Target position can only changed if all shooters on bale agree.",
+  "date": "26-Mar-2021",
+  "start": "7AM",
+  "end": "6PM",
+  "host": "Visit Winston-Salem",
+  "author": ObjectId('619d29ca13e7ff53e8431db4'),
+  "createdAt": ISODate("2021-11-23T20:43:44.832Z"),
+  "updatedAt": ISODate("2021-11-23T20:43:44.832Z"),
+  "__v": 0
+},{
+  "_id": ObjectId('619d52b231d8cc22b92da9c2'),
+  "title": "2021 USA ARCHERY NORTH CAROLINA STATE JOAD INDOOR CHAMPIONSHIP",
+  "catName": "compete",
+  "details": "There will be a designated spectators and coaches line that will be enforced.  No coaches or spectators will be allowed to cross once scoring has started. Lane assignments and targets will be assigned based on class and division.  No requests for lanes or positions will be allowed.  Once lane assignments have been made, no changes will be allowed.  Target position can only changed if all shooters on bale agree. No pets!  Service animals meeting ADA guidelines are welcome. Scorecards must be turned in as soon as possible after finishing round.  All archers must sign their scorecards.  All archers must turn in scorecards as a group, once all score are tabulated and agreed upon.  Shooter copies will be returned during awards ceremony.",
+  "date": "26-Mar-2021",
+  "start": "3PM",
+  "end": "6PM",
+  "host": "Visit Winston-Salem",
+  "author": ObjectId('619d29ca13e7ff53e8431db4'),
+  "createdAt": ISODate("2021-11-23T20:44:34.194+00:00"),
+  "updatedAt": ISODate("2021-11-23T20:44:34.194+00:00"),
+  "__v": 0
+}])
