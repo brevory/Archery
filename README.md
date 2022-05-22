@@ -4,17 +4,29 @@ These events are called connections and users can create/delete/view/update/rsvp
 
 Archery is coded with the node express web framework on javascript
 The software of this application has multiple features that you would find in a live secure webserver including
+
 -serverside input validation and output encoding with the express validator package to prevent xss or buffer overflow attacks
+
 -cliet side input validation on the ejs view pages
+
 -bcrypt to hash passwords
+
 -limit authentication request using express rate limit package to prevent bruteforce attacks
+
 -mvc software pattern
+
 -Mongoose to integrate a MongoDB database
+
 -EJS pages to present the view to the browser.
+
 -modularized routes to forward the request to the appropriate controller function.
+
 -moularized controller to control the flow of the application.
+
 -app reinforces secure aauthorization rules mainly through validators built and called by the routes before being sent to controllers
+
 -error handling
+
 -short lived persistent sessions stored in db
 
 
